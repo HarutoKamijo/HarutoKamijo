@@ -32,7 +32,8 @@
 
 */
 
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic);
+/* @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800,800italic); */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&family=Poppins:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
 
 html {
 
@@ -156,11 +157,11 @@ a {
 
 a:focus, img:focus, button:focus, .btn:focus {outline: none;}
 
-::-moz-selection {background-color:#fb5353;color:#fff;text-shadow:none;}
+::-moz-selection {background-color:#1f7d94;color:#fff;text-shadow:none;}
 
-::selection {background-color: #fb5353;color: #fff;text-shadow: none;}
+::selection {background-color: #1f7d94;color: #fff;text-shadow: none;}
 
-@font-face {font-family: 'Open Sans', sans-serif;}
+@font-face {font-family: 'Poppins', 'Noto+Sans+JP', sans-serif;}
 
 /*===== Header ===*/
 
@@ -168,7 +169,7 @@ header[role="header"]{ padding-top:80px; padding-bottom:39px}
 
 header[role="header"] h1{ padding:0; margin:0}
 
-header[role="header"] h1 > a{ max-width:66px; display:block; float:left}
+header[role="header"] h1 > a{ width:40%; display:block; float:left}
 
 header[role="header"] nav{ padding-top:10px;transition-delay: 0s;
 
@@ -180,7 +181,7 @@ header[role="header"] nav ul > li{ font-weight:800; font-size:42px; display:bloc
 
 header[role="header"] nav ul > li > a{ display:block; line-height:72px; color:#404040}
 
-header[role="header"] nav ul > li:hover a,header[role="header"] nav ul > li.nav-active a{ text-decoration:none; color:#fb5353}
+header[role="header"] nav ul > li:hover a,header[role="header"] nav ul > li.nav-active a{ text-decoration:none; color:#1f7d94}
 
 header[role="header"] nav #menu-button {width: 31px;font-size: 0;float: right;height: 19px;position: relative; z-index:70;
 
@@ -218,13 +219,12 @@ main[role="main-home-wrapper"],main[role="main-inner-wrapper"] { padding-bottom:
 
 main[role="main-home-wrapper"] article[role="pge-title-content"],main[role="main-inner-wrapper"] article[role="pge-title-content"]{ padding-left:41px}
 
-main[role="main-home-wrapper"] article[role="pge-title-content"] header,main[role="main-inner-wrapper"] article[role="pge-title-content"] header{ padding-bottom:19px; padding-top:83px}
+main[role="main-home-wrapper"] article[role="pge-title-content"] header,main[role="main-inner-wrapper"] article[role="pge-title-content"] header{ padding-bottom:19px; padding-top:40px}
 
-main[role="main-home-wrapper"] article[role="pge-title-content"] header h2,main[role="main-inner-wrapper"] article[role="pge-title-content"] header h2{ font-size:46px; line-height:53px; color:#404040; font-weight:800}
+main[role="main-home-wrapper"] article[role="pge-title-content"] header h2,main[role="main-inner-wrapper"] article[role="pge-title-content"] header h2{ font-size:36px; line-height:60px; color:#404040; font-weight:100}
 
-main[role="main-home-wrapper"] article[role="pge-title-content"] header h2 span,main[role="main-inner-wrapper"] article[role="pge-title-content"] header h2 span{ display:block; font-size:80px; color:#fb5353; padding-bottom:15px}
-
-main[role="main-home-wrapper"] article[role="pge-title-content"] p,main[role="main-inner-wrapper"] article[role="pge-title-content"] p{ font-size:20px; line-height:30px; color:#454545}
+main[role="main-home-wrapper"] article[role="pge-title-content"] header h2 span,main[role="main-inner-wrapper"] article[role="pge-title-content"] header h2 span{ display:block; font-size:70px; color:#1f7d94; font-weight:800; padding-bottom:15px}
+main[role="main-home-wrapper"] article[role="pge-title-content"] p,main[role="main-inner-wrapper"] article[role="pge-title-content"] p{ font-size:20px; line-height:30px; color:#454545; font-weight:100}
 
 /*===== footer ===*/
 
@@ -240,7 +240,7 @@ footer[role="footer"] nav > ul > li{ display: inline-block; text-transform:upper
 
 footer[role="footer"] nav > ul > li > a{ color:#9d9d9d}
 
-footer[role="footer"] nav > ul > li:hover a{ text-decoration:none; color:#fb5353}
+footer[role="footer"] nav > ul > li:hover a{ text-decoration:none; color:#1f7d94}
 
 footer[role="footer"] ul[role="social-icons"]{ padding:0; margin:0; text-align:center; padding-bottom:40px;}
 
@@ -248,49 +248,87 @@ footer[role="footer"] ul[role="social-icons"] > li{ display: inline-block; margi
 
 footer[role="footer"] ul[role="social-icons"] > li > a{ display:block; width:42px; height:42px; background-color:#bbbbbb; color:#FFF; line-height:42px; font-size:20px; border-radius:100%; text-align:center}
 
-footer[role="footer"] ul[role="social-icons"] > li:hover a{ background-color:#fb5353}
+footer[role="footer"] ul[role="social-icons"] > li:hover a{ background-color:#1f7d94}
 
 footer[role="footer"] .copy-right{ text-align:center; display:block; font-size:12px; line-height:13px; color:#9c9c9c}
 
 /*===== About ===*/
 
-main[role="main-inner-wrapper"] .about-content{ background-color:#fb5353; padding-top:57px; padding-left:70px; padding-right:67px; padding-bottom:58px}
+main[role="main-inner-wrapper"] .about-content{ background-color:#1f7d94; padding-top:57px; padding-left:70px; padding-right:67px; padding-bottom:58px}
 
 main[role="main-inner-wrapper"] .about-content p{ font-size:17px; line-height:30px; color:#FFF; padding-bottom:20px}
+main[role="main-inner-wrapper"] .about-content td{ font-size:17px; line-height:30px; color:#FFF; padding-bottom:20px}
+main[role="main-inner-wrapper"] .about-content h3{ font-size:17px; line-height:30px; color:#FFF; padding-bottom:20px;font-weight:600}
+
+main[role="main-inner-wrapper"] .about-list{  padding-top:57px; padding-left:70px; padding-right:67px; padding-bottom:58px}
+
+main[role="main-inner-wrapper"] .about-list p{ font-size:17px; line-height:30px; color:#454545; padding-bottom:20px}
+main[role="main-inner-wrapper"] .about-list td{ font-size:17px; line-height:30px; color:#454545; padding-bottom:20px}
+main[role="main-inner-wrapper"] .about-list papertitle{ font-size:17px; line-height:30px; color:#454545; padding-bottom:20px;font-weight:600;text-decoration: underline}
+main[role="main-inner-wrapper"] .about-list journal{ font-size:17px; line-height:30px; color:#454545; padding-bottom:20px;font-weight:300;font-style: italic;}
+main[role="main-inner-wrapper"] .about-list papercaption{ font-size:17px; line-height:30px; color:#1f7d94; padding-bottom:20px}
+
+main[role="main-inner-wrapper"] .about-list h2{ font-size:17px; line-height:30px; color:#454545; padding-bottom:20px;font-weight:600}
+main[role="main-inner-wrapper"] .about-list h3{ font-size:17px; line-height:30px; color:#454545; padding-bottom:20px;font-weight:300}
+
 
 main[role="main-inner-wrapper"] .thumbnails-pan{ padding-top:30px}
 
 main[role="main-inner-wrapper"] .thumbnails-pan section figure{ background-color:#FFF; position:relative; overflow:hidden; cursor:pointer}
 
-main[role="main-inner-wrapper"] .thumbnails-pan section figure,main[role="main-inner-wrapper"] .thumbnails-pan section figure, img,main[role="main-inner-wrapper"] .thumbnails-pan section figure figcaption,section.blog-content figure,section.blog-content figure img,section.blog-content  article{transition-delay: 0s;transition-duration: 0.6s;transition-property: all;transition-timing-function: ease;}
+main[role="main-inner-wrapper"] .thumbnails-pan section figure,main[role="main-inner-wrapper"] .thumbnails-pan section figure, img,main[role="main-inner-wrapper"] .thumbnails-pan section figure figcaption,section.news-content figure,section.news-content figure img,section.news-content  article{transition-delay: 0s;transition-duration: 0.6s;transition-property: all;transition-timing-function: ease;}
 
-main[role="main-inner-wrapper"] .thumbnails-pan section figure figcaption{ position:absolute; bottom:-50%; left:0; right:0; background-color:#fb5353; margin:0 69px; text-align:center; color:#FFF; padding-top:16px; padding-bottom:27px}
+main[role="main-inner-wrapper"] .thumbnails-pan section figure figcaption{ position:absolute; bottom:-50%; left:0; right:0; background-color:#1f7d94; margin:0 69px; text-align:center; color:#FFF; padding-top:16px; padding-bottom:27px}
 
 main[role="main-inner-wrapper"] .thumbnails-pan section figure figcaption h3{ font-size:21px; line-height:22px; font-weight:300}
 
 main[role="main-inner-wrapper"] .thumbnails-pan section figure figcaption h5{ text-transform:uppercase; font-size:13px; line-height:14px; font-weight:bold}
 
-main[role="main-inner-wrapper"] .thumbnails-pan section figure:hover,section.blog-content:hover article{ background-color:#fb5353; color:#FFF}
+main[role="main-inner-wrapper"] .thumbnails-pan section figure:hover,section.news-content:hover article{ background-color:#1f7d94; color:#FFF}
 
-main[role="main-inner-wrapper"] .thumbnails-pan section figure:hover img,section.blog-content:hover figure img{-webkit-transform: scale3d(1.08,1.08,2);transform: scale3d(1.08,1.08,2); opacity:0.5}
+main[role="main-inner-wrapper"] .thumbnails-pan section figure:hover img,section.news-content:hover figure img{-webkit-transform: scale3d(1.08,1.08,2);transform: scale3d(1.08,1.08,2); opacity:0.5}
 
 main[role="main-inner-wrapper"] .thumbnails-pan section figure:hover figcaption{ bottom:0;}
 
-/*===== Blog ===*/
+/*===== news ===*/
 
-article[role="pge-title-content"].blog-header{ padding-bottom:218px}
+article[role="pge-title-content"].news-header{ padding-bottom:218px}
+main[role="main-inner-wrapper"] .news-content{ background-color:#1f7d94; padding-top:57px; padding-left:70px; padding-right:67px; padding-bottom:58px}
 
-section.blog-content{ margin-bottom:29px}
+main[role="main-inner-wrapper"] .news-content p{ font-size:17px; line-height:30px; color:#FFF; padding-bottom:20px}
+main[role="main-inner-wrapper"] .news-content td{ font-size:17px; line-height:30px; color:#FFF; padding-bottom:20px}
+main[role="main-inner-wrapper"] .news-content h3{ font-size:17px; line-height:30px; color:#FFF; padding-bottom:20px;font-weight:600}
 
-section.blog-content figure{ overflow:hidden; position:relative;background-color: rgba(255,255,255,0.4); cursor:pointer}
+main[role="main-inner-wrapper"] .news-list{  padding-top:57px; padding-left:70px; padding-right:67px; padding-bottom:58px}
 
-section.blog-content figure .post-date{ text-align:center; color:#FFF; font-weight:800; font-size:14px; line-height:18px; text-transform:uppercase; display:block; background-color:#fb5353; width:130px; height:130px; position:absolute; left:0; top:0; padding-top:41px; z-index:50}
+main[role="main-inner-wrapper"] .news-list p{ font-size:17px; line-height:30px; color:#454545; padding-bottom:20px}
+main[role="main-inner-wrapper"] .news-list p.img-center{text-align: center;}
+main[role="main-inner-wrapper"] .news-list td{ font-size:17px; line-height:30px; color:#454545; padding-bottom:20px;}
 
-section.blog-content figure .post-date span{ font-size:50px; line-height:35px; display:block}
 
-section.blog-content  article{ font-size:21px; line-height:30px; color:#FFF;  font-weight:800; color:#343434; padding-left:42px; padding-top:33px; padding-bottom:31px;}
+main[role="main-inner-wrapper"] .news-list papertitle{ font-size:17px; line-height:30px; color:#454545; padding-bottom:20px;font-weight:600;text-decoration: underline}
+main[role="main-inner-wrapper"] .news-list journal{ font-size:17px; line-height:30px; color:#454545; padding-bottom:20px;font-weight:300;font-style: italic;}
+main[role="main-inner-wrapper"] .news-list papercaption{ font-size:17px; line-height:30px; color:#1f7d94; padding-bottom:20px}
 
-section.blog-content:hover figure img{ opacity:0.5}
+main[role="main-inner-wrapper"] .news-list h2{ font-size:17px; line-height:30px; color:#454545; padding-bottom:20px;font-weight:600}
+main[role="main-inner-wrapper"] .news-list h3{ font-size:17px; line-height:30px; color:#454545; padding-bottom:20px;font-weight:300}
+main[role="main-inner-wrapper"] .news-list td img{max-width: 400px; display: inline-block;vertical-align: middle;}
+
+
+.news-images{ margin-top:46px}
+/* 
+section.news-content{ margin-bottom:29px}
+
+section.news-content figure{ overflow:hidden; position:relative;background-color: rgba(255,255,255,0.4); cursor:pointer}
+main[role="main-inner-wrapper"].news-content td{ font-size:17px; line-height:30px; color:#454545; padding-bottom:20px}
+
+section.news-content figure .post-date{ text-align:center; color:#FFF; font-weight:800; font-size:14px; line-height:18px; text-transform:uppercase; display:block; background-color:#1f7d94; width:130px; height:130px; position:absolute; left:0; top:0; padding-top:41px; z-index:50}
+
+section.news-content figure .post-date span{ font-size:50px; line-height:35px; display:block}
+
+section.news-content  article{ font-size:21px; line-height:30px; color:#FFF;  font-weight:800; color:#343434; padding-left:42px; padding-top:33px; padding-bottom:31px;}
+
+section.news-content:hover figure img{ opacity:0.5} */
 
 /*===== Contact ===*/
 
@@ -298,7 +336,7 @@ article[role="pge-title-content"].contact-header{ padding-bottom:218px}
 
 article[role="pge-title-content"].contact-header p a{ color:#343434; padding-right:34px}
 
-article[role="pge-title-content"].contact-header p a:hover{color:#fb5353; text-decoration:none}
+article[role="pge-title-content"].contact-header p a:hover{color:#1f7d94; text-decoration:none}
 
 .demo-wrapper {width: 100%;margin: 0 auto;height:499px;}
 
@@ -324,45 +362,60 @@ article[role="pge-title-content"].contact-header p a:hover{color:#fb5353; text-d
 
 .contat-from-wrapper textarea{ border-bottom:1px solid #bbbbbb; border-left:none; border-right:none; border-top:none; height:77px; margin-top:56px}
 
-.contat-from-wrapper input[type="submit"]{ display:block; border:none; outline:none; width:200px; line-height:60px; text-transform:uppercase; font-size:21px; color:#FFF; font-weight:800; letter-spacing:2px; background-color:#e84d49; margin:41px auto; margin-bottom:0}
+.contat-from-wrapper input[type="submit"]{ display:block; border:none; outline:none; width:200px; line-height:60px; text-transform:uppercase; font-size:21px; color:#FFF; font-weight:800; letter-spacing:2px; background-color:#1f7d94; margin:41px auto; margin-bottom:0}
 
-.contat-from-wrapper input[type="submit"]:hover{background-color:#f8524e}
+.contat-from-wrapper input[type="submit"]:hover{background-color:#2d9bb6}
 
 /*== Work Details ==*/
 
-.work-details,.blog-details{ padding:0 69px; margin-top:73px}
+.work-details,.news-details{ padding:0 69px; margin-top:73px}
 
 .work-details header h2{ color:#343434; font-size:36px; font-weight:800}
 
-.work-details header a{ display:inline-block; color:#fb5353; font-size:18px;font-weight:800;padding-top:3px}
+.work-details header a{ display:inline-block; color:#1f7d94; font-size:16px;font-weight:300;padding-top:3px}
 
 .work-details header a i{ color:#0d0d0d; padding-left:10px}
 
 .work-details header a:hover{ color:#0d0d0d; text-decoration:none}
 
-.work-details header a:hover i{ color:#fb5353}
+.work-details header a:hover i{ color:#1f7d94}
 
 .work-details p{ font-size:16px; color:#666666; line-height:30px; margin-bottom:20px; font-weight:300}
 
 .work-details p strong{ font-weight:800}
 
+.work-details papertitle{ font-size:17px; line-height:30px; color:#454545; padding-bottom:20px;font-weight:600;text-decoration: underline}
+.work-details journal{ font-size:17px; line-height:30px; color:#454545; padding-bottom:20px;font-weight:300;font-style: italic;}
+.work-details papercaption{ font-size:17px; line-height:30px; color:#1f7d94; padding-bottom:20px}
+
 .work-images{ margin-top:46px}
 
-.work-images li{ margin-bottom:50px}
+.work-images li{ margin-bottom:50px;text-align: left}
 
-/*== Blog Details ==*/
+/* .work-images {
+	width: 100%;
+	aspect-ratio: 16 / 9;
+  } */
+.work-images iframe {
+	max-width: 100%;
+	width: 1000px;
+	height: auto;
+	aspect-ratio: 16 / 9;
+  }
+
+/*== news Details ==*/
 
 .bog-header { padding-bottom:62px}
 
 .bog-header h3,.comments-pan h3,.commentys-form h4{ color:#404040;font-weight:800; padding-bottom:24px; display:block}
 
-.bog-header h3 span{ color:#fb5353}
+.bog-header h3 span{ color:#1f7d94}
 
 .bog-header h2{ font-size:36px; font-weight:normal}
 
-.blog-details .enter-content{ margin-top:62px}
+.news-details .enter-content{ margin-top:62px}
 
-.blog-details .enter-content p{ font-size:16px; line-height:30px; font-weight:300; margin-bottom:23px}
+.news-details .enter-content p{ font-size:16px; line-height:30px; font-weight:300; margin-bottom:23px}
 
 .comments-pan{border-top:2px solid #dedede; padding-top:15px}
 
@@ -396,7 +449,7 @@ article[role="pge-title-content"].contact-header p a:hover{color:#fb5353; text-d
 
 .commentys-form input[type="text"]:focus,.commentys-form input[type="email"]:focus,.commentys-form input[type="url"]:focus,.commentys-form textarea:focus{ border-bottom-color:#000}
 
-.commentys-form input[type="button"]{ padding:0 36px; text-transform:uppercase; display:inline-block; font-size:21px; line-height:60px; color:#FFF; font-weight: bold; text-align:center; border:none; outline:none; background-color:#fb5353; margin-top:50px}
+.commentys-form input[type="button"]{ padding:0 36px; text-transform:uppercase; display:inline-block; font-size:21px; line-height:60px; color:#FFF; font-weight: bold; text-align:center; border:none; outline:none; background-color:#1f7d94; margin-top:50px}
 
-.commentys-form input[type="button"]:hover{ background-color:#ff5c5c}
+.commentys-form input[type="button"]:hover{ background-color:#1f7d94}
 
