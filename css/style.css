@@ -390,15 +390,20 @@ article[role="pge-title-content"].contact-header p a:hover{color:#1f7d94; text-d
 
 .work-images{ margin-top:46px}
 
-.work-images li{ margin-bottom:50px;text-align: left}
+.work-images li{
+	width: 100%;
+	height: auto;
+	/* object-fit: contain; */
+	margin-bottom:50px;
+	text-align: left}
 
 /* .work-images {
 	width: 100%;
 	aspect-ratio: 16 / 9;
   } */
 .work-images iframe {
-	max-width: 100%;
-	width: 1000px;
+	/* max-width: 100%; */
+	width: 100%;
 	height: auto;
 	aspect-ratio: 16 / 9;
   }
