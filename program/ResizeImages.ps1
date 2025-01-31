@@ -17,6 +17,7 @@ function Resize-ImagesToMaxWidth1920 {
 
     # 各ファイルをリサイズして保存
     foreach ($file in $jpgFiles) {
+        Write-Host("hoge")
         # 元のファイルパス
         $inputFile = $file.FullName
 
@@ -29,7 +30,7 @@ function Resize-ImagesToMaxWidth1920 {
             $outputFile = Join-Path -Path $parentDir -ChildPath $file.Name
 
             # 横幅を1920pxにリサイズ
-            & $convertPath $inputFile -resize 1920x $outputFile
+            & $convertPath $inputFile -resize 1920 $outputFile
             Write-Output "$inputFile の幅を1920pxにリサイズしました。"
         } else {
             Write-Output "$inputFile の幅は1920px未満のため、そのままです。"
